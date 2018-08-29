@@ -5,4 +5,12 @@ import { Component } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss']
 })
-export class HomePage {}
+export class HomePage {
+  email:string;
+  password:string;
+  constructor(email: string, password: string) {
+    this.email = email;
+    this.password = password;
+  }
+}
+
